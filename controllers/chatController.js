@@ -1,5 +1,5 @@
-const { processPDFBuffer } = require('../utils/pdfProcessor');
 const { generateAnswer } = require('../llm/llmInitializer');
+const processPDFBuffer = require('../utils/pdfProcessor');
 const { retrieveRelevantChunks, storePDFTextAsVectors } = require('../utils/vectorstore');
 
 async function handleChatWithPDF(req, res) {
