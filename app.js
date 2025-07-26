@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 
 // ✅ CORS Config
-const allowedOrigins = [process.env.FRONTEND_URL || 'https://superllm.vercel.app'];
+const allowedOrigins = [process.env.FRONTEND_URL || 'https://superllm.vercel.app' || 'http://localhost:3000'];
 
 app.use(cors({
   origin: function (origin, callback) {
